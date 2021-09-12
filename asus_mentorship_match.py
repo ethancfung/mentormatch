@@ -1,14 +1,7 @@
-"""Documentation"""
-
 # Program Name: ASUS Mentorship Program's Automatic Matching
-
-# Author: Ethan Fung and Dennis Hyunh
-
+# Authors: Dennis Huynh and Ethan Fung
 # Date: September 11th 2021
-
-# Version: 6
-
-# Python version: Python3
+# Python version: 3.7
 
 """Purpose"""
 
@@ -17,20 +10,12 @@
 # and upper years sign up through a Google Forms and then automatically being paired through the program.
 # This code was based on the Virtual Water Cooler created by Dennis Hyunh.
 
-
-"""How to Set Up and Use Program"""
-# 1. Put csv files in the same folder as python file
-# 2. Change names of dfmentee and dfmentor to the correct names of csv files
-# 3. check that the names columns of data being retrieved from the csv files are correct/ the same as in the csv files
-# 4. run the program and a csv file will be outputted in the same folder
-
 """Initializations"""
 # Import statements
 import pandas as pd
 import numpy as np
 
 """Load the Data"""
-
 # Read part of the first years responses
 dfmentee = pd.read_csv(
     "Updated AMP First Year Registration 2021-2022 (Responses) - Form Responses 1.csv",
@@ -133,8 +118,6 @@ Desc:
     Params: a, b (row in pandas DataFrame)
     Output: boolean
 """
-
-
 def match(a, b):
     # Check if it is a first year and an upper year
     if a["position"] != b["position"]:
@@ -379,8 +362,6 @@ Desc:
     Params: df (pandas Data Frame)
     Output: match_successes (list of pandas Data Frame), unmatched_df (pandas Data Frame)
 """
-
-
 def matchMaking(df):
 
     # Transform the dataframe into a list of dictionaries
