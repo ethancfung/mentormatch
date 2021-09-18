@@ -63,7 +63,7 @@ dfmentee.columns = [
     "email",
     "full_name",
     "pronouns",
-    "faculty",
+    "faculty ",
     "interest1",
     "interest2",
     "interest3",
@@ -118,6 +118,8 @@ Desc:
     Params: a, b (row in pandas DataFrame)
     Output: boolean
 """
+
+
 def match(a, b):
     # Check if it is a first year and an upper year
     if a["position"] != b["position"]:
@@ -362,6 +364,8 @@ Desc:
     Params: df (pandas Data Frame)
     Output: match_successes (list of pandas Data Frame), unmatched_df (pandas Data Frame)
 """
+
+
 def matchMaking(df):
 
     # Transform the dataframe into a list of dictionaries
