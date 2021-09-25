@@ -18,3 +18,9 @@ The data used for the matching Python program can be found in Test Data. There a
 
 ## Output
 The output of the matches can be found in email_asus_matches.csv
+
+## How to Make the .EXE
+The .EXE was created using Anaconda and Pyinstaller. A new environment was created in Anaconda which had numpy and pandas installed. Pyinstaller was installed into the new environment by running `pip install pyinstaller` in the new environment. Moving to the program's directory, `pyinstaller -F yourprogram.py` was run to create the .EXE file.
+
+## How to Run the .EXE
+Put the mentor and first year data in the dist file with the asus_mentorship_match.exe and click the asus_mentorship_match.exe to run the program. A email_asus_matches.csv file will be created with the matches.  
